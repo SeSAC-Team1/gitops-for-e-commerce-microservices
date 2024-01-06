@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: store-ui-deployment
+spec:
+  selector:
+    matchLabels:
+      app: store-ui-deployment
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: store-ui-deployment
+    spec:
+      containers:
+      - name: store-ui
+        image: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/store-ui:bf86d2fc2e02760c89cb6ae8611a912f4a27efa3
+        imagePullPolicy: IfNotPresent
+        ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP
+          

@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: products-deployment
+spec:
+  selector:
+    matchLabels:
+      app: products-deployment
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: products-deployment
+    spec:
+      containers:
+      - name: products
+        image: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/products:6b28e8887527c0792fd85615298f865a078c62dd
+        imagePullPolicy: IfNotPresent
+        envFrom:
+        - secretRef:
+            name: product-mongo
+        - configMapRef:
+            name: product-mongo
