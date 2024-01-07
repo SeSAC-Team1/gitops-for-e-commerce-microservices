@@ -6,6 +6,6 @@ images:
   newTag: v1.0.1
 - name: store-ui
   newName: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/store-ui
-  newTag: 482f92774bd405c2ba470841aa3e483ae397e0fd
+  newTag: 7fdb4c3ca392dda75848231e79ce8902f454cebc
 resources:
 - ../../../base/store-ui
