@@ -4,6 +4,9 @@ images:
 - name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/demo-cart-backend
   newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/demo-cart-backend
   newTag: v1.0.1
+- name: cart
+  newName: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/cart
+  newTag: 03fd1c5712d85b69d9e86e15905e80d954061c4c
 namespace: e-commerce
-bases:
+resources:
 - ../../../base/cart
