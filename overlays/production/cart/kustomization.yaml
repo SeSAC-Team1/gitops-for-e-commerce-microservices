@@ -6,7 +6,7 @@ images:
   newTag: v1.0.1
 - name: cart
   newName: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/cart
-  newTag: d27a640bb3837def1c62133009f899615d2648a2
+  newTag: a066700d11b56650b40fc133789d66ce2cc16d0a
 namespace: e-commerce
 resources:
 - ../../../base/cart
