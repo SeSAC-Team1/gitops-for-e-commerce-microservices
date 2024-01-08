@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: products
-        image: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/products:6b28e8887527c0792fd85615298f865a078c62dd
+        image: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/products:latest
         imagePullPolicy: IfNotPresent
         envFrom:
         - secretRef:

@@ -15,24 +15,10 @@ spec:
     spec:
       containers:
       - name: users
-        image: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/users:6b28e8887527c0792fd85615298f865a078c62dd
+        image: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/users:latest
         imagePullPolicy: IfNotPresent
-        env:
-        - name: DB_ENGINE
-          value: "postgresql+asyncpg"
-        - name: DB_USERNAME
-          value: "users_admin"
-        - name: DB_PASSWORD
-          value: "pigeon0112"
-        - name: DB_HOST
-          value: "ecommerce-users.cgkwkptg3vmk.ap-northeast-2.rds.amazonaws.com"
-        - name: DB_NAME
-          value: "ecommerce_users"
-        - name: CORS_ORIGINS
-          value: "*"
-        - name: APP_HOST
-          value: "0.0.0.0"
-        - name: APP_RELOAD
-          value: "False"
-        - name: APP_PORT
-          value: "5030"
+        envFrom:
+        - secretRef:
+            name: users-postgre
+        - configMapRef:
+            name: users-postgre

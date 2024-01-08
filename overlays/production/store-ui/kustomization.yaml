@@ -1,9 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-- name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/demo-ui-frontend
-  newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/demo-ui-frontend
-  newTag: v1.0.1
 - name: store-ui
   newName: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/store-ui
   newTag: 3204c33733950bd626338ec084382026e714e972
