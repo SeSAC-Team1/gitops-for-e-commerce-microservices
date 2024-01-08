@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: cart
-        image: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/cart:b85000262684443b8b02871161afb20d3a22aa87
+        image: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/cart:latest
         imagePullPolicy: IfNotPresent
         envFrom:
         - configMapRef:
