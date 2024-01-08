@@ -1,8 +1,0 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-images:
-- name: store-ui
-  newName: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/store-ui
-  newTag: bcd803c1c1112396565129404207321fc23b1032
-resources:
-- ../../../base/store-ui
