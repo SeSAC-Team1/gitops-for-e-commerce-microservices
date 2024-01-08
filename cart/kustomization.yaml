@@ -1,10 +1,10 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - cart-service.yaml
-  - cart-configmap.yaml
-  - cart-deployment.yaml
+- cart-service.yaml
+- cart-configmap.yaml
+- cart-deployment.yaml
 images:
 - name: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/cart
   newName: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/cart
-  newTag: v1.0.1
+  newTag: b267ce69193f5249dd9cedd6a07284d573ec288e
