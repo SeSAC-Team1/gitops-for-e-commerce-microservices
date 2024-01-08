@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: store-ui
-        image: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/store-ui:bf86d2fc2e02760c89cb6ae8611a912f4a27efa3
+        image: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/store-ui:latest
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
