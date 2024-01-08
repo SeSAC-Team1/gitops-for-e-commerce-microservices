@@ -3,7 +3,7 @@ kind: Kustomization
 images:
 - name: cart
   newName: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/cart
-  newTag: a066700d11b56650b40fc133789d66ce2cc16d0a
+  newTag: 17a98677c4d05d98adaf1064d3e4c65cffdb1d30
 namespace: e-commerce
 resources:
 - ../../../base/cart
