@@ -5,7 +5,6 @@ metadata:
   name: users-postgre
   namespace: default
   resourceVersion: "2275227"
-  uid: 711e48b4-1096-49a3-96f8-eeb07acd7b4b
 data:
   APP_HOST: 0.0.0.0
   APP_PORT: "5030"
