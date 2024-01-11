@@ -7,4 +7,4 @@ resources:
 images:
 - name: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/store-ui
   newName: 375586205616.dkr.ecr.ap-northeast-2.amazonaws.com/store-ui
-  newTag: ad5fc45da3bc86e0aaeb4a3b3bcac63e34110f97
+  newTag: 402337ec2854b00ba68643bce24c5d421384e572
